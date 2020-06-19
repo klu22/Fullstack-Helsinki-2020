@@ -1,0 +1,22 @@
+EXERCISE 0.4: new note
+
+    https://www.websequencediagrams.com/ :
+
+
+    browser->server: HTTP POST /new_note
+    note over server:
+    server adds note to "notes" array
+    end note over 
+
+    server-->browser: HTTP 302 found
+
+    note over browser:
+    browser reloads Notes page
+    end note
+
+    browser->server: HTTP GET /main.css
+    server-->browser: response
+    browser->server: HTTP GET /main.js
+    server-->browser: response
+    browser->server: HTTP GET /data.json
+    server-->browser: response

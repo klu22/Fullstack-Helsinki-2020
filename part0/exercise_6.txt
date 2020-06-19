@@ -1,0 +1,17 @@
+EXERCISE 0.6: SPA new note 
+
+    https://www.websequencediagrams.com/ :
+
+
+    note over browser:
+    Browser adds note to "notes" 
+    list, then re-draws list. 
+    end note
+
+    note over browser:
+    Browser prepares to send
+    new note as JSON data.
+    end note
+
+    browser->server: HTTP POST /new_note_spa
+    server-->browser: HTTP 201 created

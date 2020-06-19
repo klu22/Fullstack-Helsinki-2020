@@ -1,0 +1,25 @@
+EXERCISE 0.5: single page app
+
+    https://www.websequencediagrams.com/ :
+
+
+    browser->server: HTTP GET /spa
+    server-->browser: HTML code
+    browser->server: HTTP GET /main.css
+    server-->browser: main.css
+    browser->server: HTTP GET /main.js
+    server-->browser: main.js
+
+    note over browser:
+    js creates empty "notes" 
+    array and requests JSON
+    data from server. 
+    end note
+
+    browser->server: HTTP GET /data.json
+    server-->browser: data.json
+
+    note over browser:
+    js uses JSON data to
+    fill the "notes" array.
+    end note
